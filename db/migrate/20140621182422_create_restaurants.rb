@@ -9,6 +9,8 @@ class CreateRestaurants < ActiveRecord::Migration
       t.string :description
       t.string :category
 
+      t.timestamps
+
     end
   end
 end

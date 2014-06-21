@@ -17,13 +17,15 @@ ActiveRecord::Schema.define(version: 20140621182705) do
   enable_extension "plpgsql"
 
   create_table "restaurants", force: true do |t|
-    t.string  "name",        null: false
-    t.string  "address",     null: false
-    t.string  "city",        null: false
-    t.string  "state",       null: false
-    t.integer "zip",         null: false
-    t.string  "description"
-    t.string  "category"
+    t.string   "name",        null: false
+    t.string   "address",     null: false
+    t.string   "city",        null: false
+    t.string   "state",       null: false
+    t.integer  "zip",         null: false
+    t.string   "description"
+    t.string   "category"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "reviews", force: true do |t|
