@@ -8,3 +8,13 @@
   <li><%= @restaurant.description %></li>
   <li><%= @restaurant.category %></li>
 </ul>
+
+<h2>Reviews</h2>
+
+<ul>
+  <% @reviews.each do |review| %>
+    <li><%= review.rating%></li>
+    <li><%= review.body%></li>
+    <li><%= review.created_at%></li>
+  <% end %>
+</ul>
