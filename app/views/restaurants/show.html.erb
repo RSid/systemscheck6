@@ -9,6 +9,8 @@
   <li><%= @restaurant.category %></li>
 </ul>
 
+<%= link_to("Add review",new_restaurant_review_path(@restaurant.id)) %>
+
 <h2>Reviews</h2>
 
 <ul>
