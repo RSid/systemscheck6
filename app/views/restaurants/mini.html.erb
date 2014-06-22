@@ -1,3 +1,6 @@
+
+<h1>Ten Most recent additions</h1>
+
 <% @recent_ten.each do |restaurant| %>
-  <li><%= restaurant.name %></li>
+  <li><%= "#{restaurant.name} (#{restaurant.created_at})" %></li>
 <% end %>
