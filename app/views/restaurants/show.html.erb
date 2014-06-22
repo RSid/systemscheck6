@@ -1,22 +1,23 @@
 <h1><%= @restaurant.name %></h1>
 
-<ul>
+<ul class = "details" id = "food-deets">
   <li><%= @restaurant.address %></li>
-  <li><%= @restaurant.city %></li>
-  <li><%= @restaurant.state %></li>
+  <li><%= "#{@restaurant.city}, #{@restaurant.state}" %></li>
   <li><%= @restaurant.zip %></li>
-  <li><%= @restaurant.description %></li>
-  <li><%= @restaurant.category %></li>
+  <br>
+  <li><%= "Description: #{@restaurant.description}" %></li>
+  <li><%= "Category: #{@restaurant.category}" %></li>
+  <br>
+  <li><%= link_to("Add review",new_restaurant_review_path(@restaurant.id)) %></li>
 </ul>
-
-<%= link_to("Add review",new_restaurant_review_path(@restaurant.id)) %>
 
 <h2>Reviews</h2>
 
-<ul>
+<ul class = "details">
   <% @reviews.each do |review| %>
-    <li><%= review.rating%></li>
+    <li><%= "#{review.rating} stars of 5"%></li>
     <li><%= review.body%></li>
-    <li><%= review.created_at%></li>
+    <li><em><%= review.created_at.to_formatted_s(:db) %></em></li>
+    <br>
   <% end %>
 </ul>
