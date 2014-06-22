@@ -23,6 +23,10 @@ class RestaurantsController < ApplicationController
     end
   end
 
+  def mini
+    @recent_ten = Restaurant.last(10).reverse
+  end
+
   private
 
   def restaurant_params

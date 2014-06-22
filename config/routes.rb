@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'restaurants#mini'
 
   resources :restaurants, only: [:index, :show, :new, :create] do
     resources :reviews, only: [:new, :create]
