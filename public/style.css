@@ -1,0 +1,49 @@
+.content {
+  font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+
+ #all {
+  background-image: url('fancyred.jpg') ;
+  background-size: cover;
+  margin: 0px;
+  padding: 0px;
+
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+  /*-webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  -o-filter: blur(4px);
+  -ms-filter: blur(4px);
+  filter: blur(4px);*/
+}
+
+.content {
+
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: blue;
+}
+
+h1 {
+  text-align: center;
+}

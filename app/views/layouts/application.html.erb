@@ -2,15 +2,19 @@
 <html>
 <head>
   <title>GoodEats</title>
+  <link href = '/style.css' rel = 'stylesheet'>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body id = 'all'>
 
-<p><%= link_to('NOM REVIEW',restaurants_path) %></p>
+<h1><%= link_to('NOM REVIEW',restaurants_path) %></h1>
 
+
+<div class = 'content'>
 <%= yield %>
+</div>
 
 </body>
 </html>
